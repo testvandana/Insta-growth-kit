@@ -1,0 +1,36 @@
+# --- Secrets (NEVER commit) ---
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.pem
+*.key
+
+# --- Node / Wrangler ---
+node_modules/
+.wrangler/
+dist/
+coverage/
+*.log
+npm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# --- Sensitive evidence / consent (keep locally, share privately) ---
+docs/permissions/*
+!docs/permissions/README.md
+!docs/permissions/owner-consent-template.md
+
+# --- Large media exports (keep locally or in Drive; commit only small previews if needed) ---
+creative/reel/*.mp4
+creative/reel/*.mov
+creative/originals/*.heic
+creative/originals/*.HEIC
